@@ -5275,8 +5275,8 @@ html += `</div>`;
     try {
       firebase.initializeApp(firebaseConfig);
       dbFirestore = firebase.firestore();
-      REF_PROFIL = dbFirestore.collection('arrisalah').doc('profil');
-      REF_HALAMAN = dbFirestore.collection('arrisalah_halaman');
+      REF_PROFIL = dbFirestore.collection('juz30').doc('profil');
+      REF_HALAMAN = dbFirestore.collection('juz30_halaman');
     } catch (e) {
       console.error('Gagal inisialisasi Firebase:', e);
       // Sengaja tidak dilempar ulang (throw) — supaya sisa aplikasi
